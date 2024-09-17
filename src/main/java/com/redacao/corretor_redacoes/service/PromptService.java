@@ -22,7 +22,7 @@ public class PromptService {
     @Value("${spring.gemini.apiKey}")
     private String apiKey;
 
-    private static final String API_URL = "api-example-000000";
+    private static final String API_URL = "https://take-off-ai-150874964383.us-central1.run.app/";
 
     // configurar o RestTemplate com timeouts
     private RestTemplate restTemplateWithTimeout(int connectTimeout, int readTimeout) {
