@@ -16,7 +16,7 @@ public class CorretorRedacoesController {
     }
 
     @PostMapping("/texto")
-    public ResponseEntity<String> corrigirTexto(@RequestBody String textoRedacao) {
+    public ResponseEntity<String> corrigirTexto(@RequestParam("texto") String textoRedacao) {
         String resultado = corretorRedacoesService.processarRedacaoDeTexto(textoRedacao);
         return ResponseEntity.ok(resultado);
     }
